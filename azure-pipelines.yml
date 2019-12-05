@@ -10,7 +10,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: docker login docker.io
+- script: echo docker login docker.io
   displayName: 'Run a one-line script'
 
 - script: |
