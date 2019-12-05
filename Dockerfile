@@ -22,5 +22,4 @@ RUN cert-sync /etc/ssl/certs/ca-certificates.crt
 COPY --from=builder /usr/local/src/choco/build_output/chocolatey /opt/chocolatey
 COPY bin/choco /usr/bin/choco
 
-ENTRYPOINT ["/bin/sh"]
 CMD ["-h"]
