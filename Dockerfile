@@ -2,7 +2,7 @@ FROM mono:3.12.1 as builder
 ARG CHOCOVERSION=stable
 
 RUN echo "deb http://archive.debian.org/debian/ wheezy main contrib non-free" >/etc/apt/sources.list
-RUN apt-get update && apt-get install -y wget tar gzip
+RUN apt-get update && apt-get install -y wget tar gzip git curl
 
 WORKDIR /usr/local/src
 RUN wget "https://github.com/chocolatey/choco/archive/${CHOCOVERSION}.tar.gz"
