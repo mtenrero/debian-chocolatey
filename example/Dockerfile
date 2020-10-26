@@ -1,4 +1,4 @@
-FROM linuturk/mono-choco
+FROM tenrero/debian-chocolatey
 
 ENV PACKAGE=mypackage
 ENV VERSION=1.0.0
