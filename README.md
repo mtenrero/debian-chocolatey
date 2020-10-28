@@ -15,6 +15,10 @@ Test the image using `docker run --rm -v $PWD:$PWD -w $PWD tenrero/debian-chocol
 
 See [the example directory](./example/README.md) for a basic package example.
 
+### Nuget binary
+
+If you only need nuget executable for making nuget plain pkgs, you can use :nuget tag instead.
+
 ## FAQ
 
 1. "Cannot create a package that has no dependencies nor content."
